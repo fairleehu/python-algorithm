@@ -24,4 +24,7 @@
     * [归并排序](chapter5/section6.md)
     * [搜索](chapter5/section7.md)
     * [常见排序算法效率比较](chapter5/section8.md)
-* [树与树算法]
+* [树与树算法](chapter6/README.md)
+    * [二叉树](chapter6/section1.md)
+    * [二叉树的遍历](chapter6/section2.md)
+    * [树的应用场景](chapter6/section3.md)

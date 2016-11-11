@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>快速排序 | python数据结构与算法</title>
+        <title>树与树算法 | python数据结构与算法</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../chapter5/section5.html" />
+    <link rel="next" href="../chapter6/section1.html" />
     
     
-    <link rel="prev" href="../chapter5/section3.html" />
+    <link rel="prev" href="../chapter5/section8.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="5.4"
-        data-chapter-title="快速排序"
-        data-filepath="chapter5/section4.md"
+        data-level="6"
+        data-chapter-title="树与树算法"
+        data-filepath="chapter6/README.md"
         data-basepath=".."
         data-revision="Fri Nov 11 2016 14:52:35 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -377,7 +377,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="5.4" data-path="chapter5/section4.html">
+        <li class="chapter " data-level="5.4" data-path="chapter5/section4.html">
             
                 
                     <a href="../chapter5/section4.html">
@@ -457,7 +457,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6" data-path="chapter6/index.html">
+        <li class="chapter active" data-level="6" data-path="chapter6/index.html">
             
                 
                     <a href="../chapter6/index.html">
@@ -540,35 +540,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x5FEB;&#x901F;&#x6392;&#x5E8F;">&#x5FEB;&#x901F;&#x6392;&#x5E8F;</h1>
-<p>&#x901A;&#x8FC7;&#x4E00;&#x8D9F;&#x6392;&#x5E8F;&#x5C06;&#x8981;&#x6392;&#x5E8F;&#x7684;&#x6570;&#x636E;&#x5206;&#x5272;&#x6210;&#x72EC;&#x7ACB;&#x7684;&#x4E24;&#x90E8;&#x5206;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x90FD;&#x6BD4;&#x53E6;&#x5916;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x90FD;&#x8981;&#x5C0F;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6309;&#x6B64;&#x65B9;&#x6CD5;&#x5BF9;&#x8FD9;&#x4E24;&#x90E8;&#x5206;&#x6570;&#x636E;&#x5206;&#x522B;&#x8FDB;&#x884C;&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#xFF0C;&#x6574;&#x4E2A;&#x6392;&#x5E8F;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x9012;&#x5F52;&#x8FDB;&#x884C;&#xFF0C;&#x4EE5;&#x6B64;&#x8FBE;&#x5230;&#x6574;&#x4E2A;&#x6570;&#x636E;&#x53D8;&#x6210;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#x3002;</p>
-<h2 id="&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7684;&#x5206;&#x6790;">&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x7684;&#x5206;&#x6790;</h2>
-<p><img src="../images/quicksort1.png" alt="quicksort1">
-<img src="../images/quicksort2.png" alt="quicksort2"></p>
-<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">quickSort</span><span class="hljs-params">(alist,first,last)</span>:</span>
-   <span class="hljs-keyword">if</span> first&lt;last:
-       splitpoint = findpos(alist,first,last)
-
-       quickSort(alist,first,splitpoint-<span class="hljs-number">1</span>)
-       quickSort(alist,splitpoint+<span class="hljs-number">1</span>,last)
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">findpos</span><span class="hljs-params">(lists, low, high)</span>:</span>
-    key = lists[low]
-    <span class="hljs-keyword">while</span> low &lt; high:
-       <span class="hljs-keyword">while</span> low &lt; high <span class="hljs-keyword">and</span> lists[high] &gt;= key:
-           high -= <span class="hljs-number">1</span>
-       lists[low] = lists[high]
-       <span class="hljs-keyword">while</span> low &lt; high <span class="hljs-keyword">and</span> lists[low] &lt;= key:
-           low += <span class="hljs-number">1</span>
-       lists[high] = lists[low]
-    lists[low] = key
-    <span class="hljs-keyword">return</span> low
-alist = [<span class="hljs-number">54</span>,<span class="hljs-number">26</span>,<span class="hljs-number">93</span>,<span class="hljs-number">17</span>,<span class="hljs-number">77</span>,<span class="hljs-number">31</span>,<span class="hljs-number">44</span>,<span class="hljs-number">55</span>,<span class="hljs-number">20</span>]
-quickSort(alist,<span class="hljs-number">0</span>,<span class="hljs-number">8</span>)
-print(alist)
-</code></pre>
-<h2 id="&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x6F14;&#x793A;">&#x5FEB;&#x901F;&#x6392;&#x5E8F;&#x6F14;&#x793A;</h2>
-<p><img src="../images/quicksort.gif" alt="quicksort"></p>
+                        <h1 id="&#x6811;&#x4E0E;&#x6811;&#x7B97;&#x6CD5;">&#x6811;&#x4E0E;&#x6811;&#x7B97;&#x6CD5;</h1>
 
                     
                     </section>
@@ -579,10 +551,10 @@ print(alist)
         </div>
 
         
-        <a href="../chapter5/section3.html" class="navigation navigation-prev " aria-label="Previous page: 插入排序"><i class="fa fa-angle-left"></i></a>
+        <a href="../chapter5/section8.html" class="navigation navigation-prev " aria-label="Previous page: 常见排序算法效率比较"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../chapter5/section5.html" class="navigation navigation-next " aria-label="Next page: 希尔排序"><i class="fa fa-angle-right"></i></a>
+        <a href="../chapter6/section1.html" class="navigation navigation-next " aria-label="Next page: 二叉树"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
