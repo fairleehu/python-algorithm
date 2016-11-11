@@ -1,0 +1,662 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>单向链表 | python数据结构与算法</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter4/section2.html" />
+    
+    
+    <link rel="prev" href="../chapter4/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.1"
+        data-chapter-title="单向链表"
+        data-filepath="chapter4/section1.md"
+        data-basepath=".."
+        data-revision="Thu Nov 03 2016 01:31:05 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        python数据结构与算法简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/index.html">
+            
+                
+                    <a href="../chapter1/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        常用数据类型与算法效率分析
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/section1.html">
+            
+                
+                    <a href="../chapter1/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        抽象数据类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/section2.html">
+            
+                
+                    <a href="../chapter1/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        算法效率衡量
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/index.html">
+            
+                
+                    <a href="../chapter2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        栈
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/section1.html">
+            
+                
+                    <a href="../chapter2/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        栈结构实现
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/section2.html">
+            
+                
+                    <a href="../chapter2/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        栈的应用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/index.html">
+            
+                
+                    <a href="../chapter3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        队列
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/section1.html">
+            
+                
+                    <a href="../chapter3/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        队列的实现
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/section2.html">
+            
+                
+                    <a href="../chapter3/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        队列的应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/section3.html">
+            
+                
+                    <a href="../chapter3/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        双端队列
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/index.html">
+            
+                
+                    <a href="../chapter4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        链表
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.1" data-path="chapter4/section1.html">
+            
+                
+                    <a href="../chapter4/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        单向链表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/section2.html">
+            
+                
+                    <a href="../chapter4/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        单项循环链表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/section3.html">
+            
+                
+                    <a href="../chapter4/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        双向链表
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="chapter5/index.html">
+            
+                
+                    <a href="../chapter5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        排序与搜索
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="chapter5/section1.html">
+            
+                
+                    <a href="../chapter5/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        冒泡排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="chapter5/section2.html">
+            
+                
+                    <a href="../chapter5/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        选择排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="chapter5/section3.html">
+            
+                
+                    <a href="../chapter5/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        插入排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="chapter5/section4.html">
+            
+                
+                    <a href="../chapter5/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        快速排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="chapter5/section5.html">
+            
+                
+                    <a href="../chapter5/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        希尔排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="chapter5/section6.html">
+            
+                
+                    <a href="../chapter5/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        归并排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="chapter5/section7.html">
+            
+                
+                    <a href="../chapter5/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        搜索
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="chapter5/section8.html">
+            
+                
+                    <a href="../chapter5/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        常见排序算法效率比较
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >python数据结构与算法</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x5355;&#x5411;&#x94FE;&#x8868;">&#x5355;&#x5411;&#x94FE;&#x8868;</h1>
+<p>&#x94FE;&#x8868;&#x4E2D;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x79CD;&#x662F;&#x5355;&#x5411;&#x94FE;&#x8868;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x57DF;&#xFF0C;&#x4E00;&#x4E2A;&#x4FE1;&#x606F;&#x57DF;&#x548C;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x57DF;&#x3002;&#x8FD9;&#x4E2A;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x800C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x5219;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x7A7A;&#x503C;&#x3002;   </p>
+<p><img src="../images/&#x5355;&#x5411;&#x94FE;&#x8868;&#x56FE;&#x793A;.png" alt="&#x5355;&#x5411;&#x94FE;&#x8868;&#x56FE;&#x793A;"></p>
+<h2 id="&#x64CD;&#x4F5C;">&#x64CD;&#x4F5C;</h2>
+<p>travel() &#x904D;&#x5386;&#x6574;&#x4E2A;&#x94FE;&#x8868;LinkList<br>isEmpty() &#x94FE;&#x8868;&#x662F;&#x5426;&#x4E3A;&#x7A7A;<br>size() &#x94FE;&#x8868;&#x957F;&#x5EA6;<br>add() &#x94FE;&#x8868;&#x5934;&#x90E8;&#x6DFB;&#x52A0;<br>append()  &#x94FE;&#x8868;&#x5C3E;&#x90E8;&#x6DFB;&#x52A0;<br>insert() &#x4E2D;&#x95F4;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;<br>remove() &#x5220;&#x9664;&#x8282;&#x70B9;<br>search() &#x67E5;&#x627E;&#x8282;&#x70B9;&#x662F;&#x5426;&#x5B58;&#x5728;  </p>
+<h2 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h2>
+<pre><code>class SingleNode():
+    def __init__(self,item):
+        self._item=item
+        self._next=None
+    #&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x7684;&#x503C;
+    def getItem(self):
+        return self._item
+    #&#x83B7;&#x53D6;&#x4E0B;&#x4E00;&#x4E2A;&#x6307;&#x9488;
+    def getNext(self):
+        return self._next
+    #&#x8BBE;&#x7F6E;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;
+    def setNext(self,newnext):
+        self._next=newnext
+
+class SingleLinkedList():  
+    #&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5934;&#x5355;&#x5411;&#x94FE;&#x8868;&#x7684;&#x5934;&#x6307;&#x9488;
+    def __init__(self):
+        self._head=None
+    #&#x5224;&#x65AD;&#x94FE;&#x8868;&#x662F;&#x5426;&#x4E3A;&#x7A7A;
+    def isEmpty(self):
+        return self._head==None
+
+    #&#x94FE;&#x8868;&#x7684;&#x957F;&#x5EA6;
+    def size(self):
+        current=self._head
+        count=0
+        #&#x5F53;&#x94FE;&#x8868;&#x4E0D;&#x4E3A;&#x7A7A;
+        while current!=None:
+            count+=1
+            #&#x5C06;current&#x540E;&#x79FB;&#x4E00;&#x4E2A;&#x8282;&#x70B9;
+            current=current.getNext()
+        return count
+
+    #&#x904D;&#x5386;&#x94FE;&#x8868;
+    def travel(self):
+        #&#x5C06;&#x5934;&#x8282;&#x70B9;&#x8D4B;&#x7ED9;current
+        current=self._head
+        while current!=None:
+            #&#x6253;&#x5370;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x503C;
+            print current.getItem()
+            current=current.getNext()
+
+    #&#x94FE;&#x8868;&#x5934;&#x90E8;&#x6DFB;&#x52A0;&#x8282;&#x70B9;
+    def add(self,item):
+        #&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x8282;&#x70B9;
+        temp=SingleNode(item)
+        #&#x65B0;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E3A;&#x5934;&#x6307;&#x9488;&#x6307;&#x5411;&#x7684;&#x503C;
+        temp.setNext(self._head)
+        #&#x5C06;&#x65B0;&#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x4E3A;&#x5934;&#x6307;&#x9488;&#x6307;&#x5411;&#x7684;&#x8282;&#x70B9;
+        self._head=temp
+
+    #&#x94FE;&#x8868;&#x5C3E;&#x90E8;&#x6DFB;&#x52A0;&#x8282;&#x70B9;
+    def append(self,item):
+        temp=SingleNode(item)
+        if self.isEmpty():
+            self._head=temp
+        else:
+            current=self._head
+            #&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;
+            while current.getNext()!=None:
+                current=current.getNext()
+            #&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E3A;&#x8981;&#x6DFB;&#x52A0;&#x7684;&#x8282;&#x70B9;
+            current.setNext(temp)
+
+    #&#x94FE;&#x8868;&#x67E5;&#x627E;&#x8282;&#x70B9;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;True&#x6216;&#x8005;False
+    def search(self,item):
+        current=self._head
+        founditem=False
+        while current!=None and not founditem:
+            if current.getItem()==item:
+                founditem=True
+            else:
+                current=current.getNext()
+        return founditem           
+
+    #&#x5220;&#x9664;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x8282;&#x70B9;
+    def remove(self,item):
+        current=self._head
+        pre=None
+        while current!=None:
+            if current.getItem()==item:
+                #&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x5C31;&#x662F;&#x5220;&#x9664;&#x7684;&#x8282;&#x70B9;
+                if not pre:
+                    #&#x5C06;&#x5934;&#x6307;&#x9488;&#x6307;&#x5411;&#x5934;&#x8282;&#x70B9;&#x7684;&#x540E;&#x4E00;&#x4E2A;&#x8282;&#x70B9;
+                    self._head=current.getNext()
+                else:
+                    #&#x5C06;&#x8981;&#x5220;&#x9664;&#x8282;&#x70B9;&#x7684;&#x524D;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x6307;&#x9488;&#x6307;&#x5411;&#x8BE5;&#x8282;&#x70B9;&#x4E4B;&#x540E;&#x7684;&#x4E00;&#x4E2A;&#x8282;&#x70B9;
+                    pre.setNext(current.getNext())
+                break
+            else:
+                #&#x5C31;&#x7EE7;&#x7EED;&#x6309;&#x94FE;&#x8868;&#x540E;&#x79FB;&#x8282;&#x70B9;
+                pre=current
+                current=current.getNext()     
+
+    #&#x5728;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x63D2;&#x5165;&#x8282;&#x70B9;
+    def insert(self,pos,item):
+        if pos&lt;=1:
+            self.add(item)
+        elif pos&gt;self.size():
+            self.append(item)
+        else:
+            temp=SingleNode(item)
+            count=1
+            #pre&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x8981;&#x63D2;&#x5165;pos&#x4F4D;&#x7F6E;&#x4E4B;&#x524D;&#x7684;&#x4E00;&#x4E2A;&#x8282;&#x70B9;
+            pre=None
+            #&#x4ECE;&#x5934;&#x6307;&#x9488;&#x6307;&#x5411;&#x7684;&#x8282;&#x70B9;&#x5F00;&#x59CB;
+            current=self._head
+            #&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x5C0F;&#x4E8E;&#x8981;&#x63D2;&#x5165;&#x7684;&#x4F4D;&#x7F6E;
+            while count&lt;pos:
+                count+=1
+                pre=current
+                current=current.getNext()
+            #&#x8BBE;&#x7F6E;&#x7B2C;pos-1&#x4E2A;&#x4F4D;&#x7F6E;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E3A;temp
+            pre.setNext(temp)
+            #&#x8BBE;&#x7F6E;temp&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x4E3A;pos+1&#x4E2A;&#x8282;&#x70B9;
+            temp.setNext(current)
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter4/index.html" class="navigation navigation-prev " aria-label="Previous page: 链表"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter4/section2.html" class="navigation navigation-next " aria-label="Next page: 单项循环链表"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

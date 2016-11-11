@@ -1,0 +1,572 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>排序与搜索 | python数据结构与算法</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter5/section1.html" />
+    
+    
+    <link rel="prev" href="../chapter4/section3.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5"
+        data-chapter-title="排序与搜索"
+        data-filepath="chapter5/README.md"
+        data-basepath=".."
+        data-revision="Thu Nov 03 2016 01:31:05 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        python数据结构与算法简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/index.html">
+            
+                
+                    <a href="../chapter1/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        常用数据类型与算法效率分析
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/section1.html">
+            
+                
+                    <a href="../chapter1/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        抽象数据类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/section2.html">
+            
+                
+                    <a href="../chapter1/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        算法效率衡量
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/index.html">
+            
+                
+                    <a href="../chapter2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        栈
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/section1.html">
+            
+                
+                    <a href="../chapter2/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        栈结构实现
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/section2.html">
+            
+                
+                    <a href="../chapter2/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        栈的应用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/index.html">
+            
+                
+                    <a href="../chapter3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        队列
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/section1.html">
+            
+                
+                    <a href="../chapter3/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        队列的实现
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/section2.html">
+            
+                
+                    <a href="../chapter3/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        队列的应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3/section3.html">
+            
+                
+                    <a href="../chapter3/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        双端队列
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/index.html">
+            
+                
+                    <a href="../chapter4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        链表
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/section1.html">
+            
+                
+                    <a href="../chapter4/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        单向链表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/section2.html">
+            
+                
+                    <a href="../chapter4/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        单项循环链表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/section3.html">
+            
+                
+                    <a href="../chapter4/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        双向链表
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="5" data-path="chapter5/index.html">
+            
+                
+                    <a href="../chapter5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        排序与搜索
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="chapter5/section1.html">
+            
+                
+                    <a href="../chapter5/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        冒泡排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="chapter5/section2.html">
+            
+                
+                    <a href="../chapter5/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        选择排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="chapter5/section3.html">
+            
+                
+                    <a href="../chapter5/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        插入排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="chapter5/section4.html">
+            
+                
+                    <a href="../chapter5/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        快速排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="chapter5/section5.html">
+            
+                
+                    <a href="../chapter5/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        希尔排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="chapter5/section6.html">
+            
+                
+                    <a href="../chapter5/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        归并排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="chapter5/section7.html">
+            
+                
+                    <a href="../chapter5/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        搜索
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="chapter5/section8.html">
+            
+                
+                    <a href="../chapter5/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        常见排序算法效率比较
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >python数据结构与算法</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x6392;&#x5E8F;&#x4E0E;&#x641C;&#x7D22;">&#x6392;&#x5E8F;&#x4E0E;&#x641C;&#x7D22;</h1>
+<p>&#x6392;&#x5E8F;&#x662F;&#x5C06;&#x5143;&#x7D20;&#x4ECE;&#x67D0;&#x79CD;&#x987A;&#x5E8F;&#x7684;&#x96C6;&#x5408;&#x4E2D;&#x653E;&#x7F6E;&#x5143;&#x7D20;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x5217;&#x8868;&#x53EF;&#x4EE5;&#x6309;&#x5B57;&#x6BCD;&#x6216;&#x957F;&#x5EA6;&#x3002;&#x4E00;&#x4E2A;&#x57CE;&#x5E02;&#x5217;&#x8868;&#x53EF;&#x4EE5;&#x6309;&#x4EBA;&#x53E3;&#xFF0C;&#x6309;&#x5730;&#x533A;&#xFF0C;&#x6216;&#x7531;&#x90AE;&#x653F;&#x7F16;&#x7801;&#x3002;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x770B;&#x5230;&#x4E86;&#x4E00;&#x4E9B;&#x7B97;&#x6CD5;&#xFF0C;&#x80FD;&#x591F;&#x5728;&#x6392;&#x5E8F;&#x5217;&#x8868;&#x4E2D;&#x53D7;&#x76CA;&#xFF08;&#x56DE;&#x5FC6;&#x6700;&#x7EC8;&#x5B57;&#x8C1C;&#x7684;&#x4F8B;&#x5B50;&#x548C;&#x4E8C;&#x8FDB;&#x5236;&#x641C;&#x7D22;&#xFF09;&#x3002;
+&#x6709;&#x8BB8;&#x591A;&#xFF0C;&#x8BB8;&#x591A;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x5DF2;&#x5F00;&#x53D1;&#x548C;&#x5206;&#x6790;&#x3002;&#x8FD9;&#x8868;&#x660E;&#xFF0C;&#x6392;&#x5E8F;&#x662F;&#x8BA1;&#x7B97;&#x673A;&#x79D1;&#x5B66;&#x7814;&#x7A76;&#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x9886;&#x57DF;&#x3002;&#x5206;&#x7C7B;&#x5927;&#x91CF;&#x7684;&#x9879;&#x76EE;&#x53EF;&#x4EE5;&#x91C7;&#x53D6;&#x5927;&#x91CF;&#x7684;&#x8BA1;&#x7B97;&#x8D44;&#x6E90;&#x3002;&#x4E0E;&#x641C;&#x7D22;&#x4E00;&#x6837;&#xFF0C;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x7684;&#x6548;&#x7387;&#x4E0E;&#x6B63;&#x5728;&#x5904;&#x7406;&#x7684;&#x9879;&#x76EE;&#x7684;&#x6570;&#x91CF;&#x6709;&#x5173;&#x3002;&#x5BF9;&#x4E8E;&#x5C0F;&#x96C6;&#x5408;&#xFF0C;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x6392;&#x5E8F;&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x4F1A;&#x6BD4;&#x5B83;&#x66F4;&#x9EBB;&#x70E6;&#x3002;&#x5F00;&#x9500;&#x53EF;&#x80FD;&#x592A;&#x9AD8;&#x3002;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x5BF9;&#x4E8E;&#x8F83;&#x5927;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5229;&#x7528;&#x5C3D;&#x53EF;&#x80FD;&#x591A;&#x7684;&#x6539;&#x8FDB;&#x3002;&#x5728;&#x8FD9;&#x4E00;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8BA8;&#x8BBA;&#x51E0;&#x79CD;&#x6392;&#x5E8F;&#x6280;&#x672F;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x4E0E;&#x5B83;&#x4EEC;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;  </p>
+<h2 id="&#x6392;&#x5E8F;&#x5206;&#x6790;">&#x6392;&#x5E8F;&#x5206;&#x6790;</h2>
+<p>&#x5728;&#x8FDB;&#x5165;&#x7279;&#x5B9A;&#x7684;&#x7B97;&#x6CD5;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x8003;&#x8651;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5206;&#x6790;&#x4E00;&#x4E2A;&#x6392;&#x5E8F;&#x8FC7;&#x7A0B;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x5B83;&#x5C06;&#x6709;&#x5FC5;&#x8981;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x503C;&#xFF0C;&#x770B;&#x54EA;&#x4E00;&#x4E2A;&#x8F83;&#x5C0F;&#xFF08;&#x6216;&#x66F4;&#x5927;&#xFF09;&#x3002;&#x4E3A;&#x4E86;&#x5BF9;&#x96C6;&#x5408;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x5B83;&#x5C06;&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E9B;&#x7CFB;&#x7EDF;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x6BD4;&#x8F83;&#x503C;&#xFF0C;&#x770B;&#x770B;&#x4ED6;&#x4EEC;&#x662F;&#x5426;&#x662F;&#x51FA;&#x4E8E;&#x79E9;&#x5E8F;&#x3002;&#x6BD4;&#x8F83;&#x7684;&#x603B;&#x6570;&#x5C06;&#x662F;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x8861;&#x91CF;&#x4E00;&#x4E2A;&#x6392;&#x5E8F;&#x7A0B;&#x5E8F;&#x3002;&#x7B2C;&#x4E8C;&#xFF0C;&#x5F53;&#x503C;&#x4E0D;&#x5728;&#x6B63;&#x786E;&#x7684;&#x4F4D;&#x7F6E;&#x76F8;&#x5BF9;&#x4E8E;&#x5F7C;&#x6B64;&#xFF0C;&#x5B83;&#x53EF;&#x80FD;&#x662F;&#x5FC5;&#x8981;&#x7684;&#xFF0C;&#x4EE5;&#x4EA4;&#x6362;&#x4ED6;&#x4EEC;&#x3002;&#x6B64;&#x4EA4;&#x6362;&#x662F;&#x4E00;&#x4E2A;&#x6602;&#x8D35;&#x7684;&#x64CD;&#x4F5C;&#x548C;&#x603B;&#x7684;&#x4EA4;&#x6D41;&#x6570;&#x4E5F;&#x5C06;&#x662F;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x4EE5;&#x8BC4;&#x4F30;&#x8BE5;&#x7B97;&#x6CD5;&#x7684;&#x6574;&#x4F53;&#x6548;&#x7387;&#x3002;</p>
+<h2 id="&#x6392;&#x5E8F;&#x4E4B;&#x6700;">&#x6392;&#x5E8F;&#x4E4B;&#x6700;</h2>
+<p><strong>Google&#x600E;&#x4E48;&#x6837;&#x505A;50PB&#x6570;&#x636E;&#x6392;&#x5E8F;&#x7684;?</strong><br>&#x81EA;&#x4ECE;&#x521B;&#x9020; MapReduce &#x4EE5;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x901A;&#x8FC7;&#x5BF9;&#x6D77;&#x91CF;&#x968F;&#x673A;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x6765;&#x6D4B;&#x8BD5;&#x5B83;&#x3002;&#x6211;&#x4EEC;&#x559C;&#x6B22;&#x6392;&#x5E8F;&#xFF0C;&#x56E0;&#x4E3A;&#x5F88;&#x5BB9;&#x6613;&#x751F;&#x6210;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x68C0;&#x67E5;&#x8F93;&#x51FA;&#x662F;&#x5426;&#x6B63;&#x786E;&#x540C;&#x6837;&#x7B80;&#x5355;&#x3002;</p>
+<p>&#x5C3D;&#x7BA1;&#x6700;&#x521D;&#x7684; MapReduce &#x8BBA;&#x6587;&#x63D0;&#x4EA4;&#x4E86;&#x4E00;&#x4E2A; TeraSort &#x7ED3;&#x679C;&#x3002;&#x5DE5;&#x7A0B;&#x5E08;&#x5B9A;&#x671F;&#x901A;&#x8FC7;&#x5BF9; 1TB &#x6216;&#x8005; 10TB &#x7684;&#x6570;&#x636E;&#x6392;&#x5E8F;&#x6765;&#x505A;&#x56DE;&#x5F52;&#x6D4B;&#x8BD5;&#x3002;&#x56E0;&#x4E3A;&#x6570;&#x636E;&#x91CF;&#x8D8A;&#x5927;&#xFF0C;&#x90A3;&#x4E9B;&#x4E0D;&#x6613;&#x5BDF;&#x89C9;&#x7684; bug &#x8D8A;&#x5BB9;&#x6613;&#x663E;&#x73B0;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x8FDB;&#x4E00;&#x6B65;&#x6269;&#x5927;&#x89C4;&#x6A21;&#x540E;&#xFF0C;&#x4E50;&#x8DA3;&#x5F00;&#x59CB;&#x663E;&#x73B0;&#x3002;&#x672C;&#x6587;&#x4F1A;&#x56DE;&#x987E;&#x524D;&#x51E0;&#x5E74;&#x6211;&#x4EEC;&#x505A;&#x7684;&#x4E00;&#x4E9B; PB &#x91CF;&#x7EA7;&#x6D4B;&#x8BD5;&#x7684;&#x7ECF;&#x5386;&#x3002;&#x8FD9;&#x5176;&#x4E2D;&#x5305;&#x62EC; MapReduce &#x8FC4;&#x4ECA;&#x4E3A;&#x6B62;&#x505A;&#x8FC7;&#x7684;&#x6700;&#x5927;&#x91CF;&#x7EA7;&#x7684;&#x6D4B;&#x8BD5;&#xFF1A;50PB &#x6570;&#x636E;&#x7684;&#x6392;&#x5E8F;&#x3002;</p>
+<p>&#x5982;&#x4ECA;&#xFF0C;GraySort &#x5DF2;&#x7ECF;&#x662F;&#x6D77;&#x91CF;&#x6570;&#x636E;&#x6392;&#x5E8F;&#x7684;&#x57FA;&#x51C6;&#x3002;&#x4F7F;&#x7528; GraySort&#xFF0C;&#x4EE5;&#x6700;&#x5FEB;&#x7684;&#x901F;&#x5EA6;&#x6309;&#x7167;&#x5B57;&#x5178;&#x987A;&#x5E8F;&#x5BF9;&#x81F3;&#x5C11; 100TB &#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF08;100&#x5B57;&#x8282;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x5F00;&#x5934;10&#x4E2A;&#x5B57;&#x8282;&#x4F5C;&#x4E3A;&#x5173;&#x952E;&#x5B57;&#xFF09;&#x3002;&#x7F51;&#x7AD9; sortbenchmark.org &#x8BB0;&#x5F55;&#x4E86;&#x57FA;&#x4E8E;&#x6B64;&#x57FA;&#x51C6;&#x7684;&#x5B98;&#x65B9;&#x83B7;&#x80DC;&#x8005;&#x3002;&#x4F46;&#x8C37;&#x6B4C;&#x4ECE;&#x672A;&#x53C2;&#x52A0;&#x5B98;&#x65B9;&#x7ADE;&#x8D5B;&#x3002;</p>
+<p>&#x7531;&#x4E8E; MapReduce &#x5C31;&#x662F;&#x901A;&#x8FC7;&#x5BF9;&#x952E;&#x6392;&#x5E8F;&#x6765;&#x7F29;&#x51CF;&#x89C4;&#x6A21;&#xFF0C;&#x56E0;&#x800C;&#x5B83;&#x5F88;&#x9002;&#x5408;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x901A;&#x8FC7;&#x5408;&#x9002;&#x7684;&#xFF08;&#x8BCD;&#x5178;&#xFF09;&#x5206;&#x7247;&#x529F;&#x80FD;&#xFF0C;MapReduce&#x8F93;&#x51FA;&#x4E00;&#x7CFB;&#x5217;&#x5305;&#x542B;&#x6700;&#x7EC8;&#x6392;&#x5E8F;&#x540E;&#x6570;&#x636E;&#x96C6;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x5728;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x6709;&#x65B0;&#x96C6;&#x7FA4;&#x51FA;&#x73B0;&#x65F6;&#xFF08;&#x4E00;&#x822C;&#x662F;&#x641C;&#x7D22;&#x7D22;&#x5F15;&#x56E2;&#x961F;&#x4F7F;&#x7528;&#xFF09;&#xFF0C; &#x6211;&#x4EEC; MapReduce &#x7EC4;&#x5458;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x52A8;&#x624B;&#x5E72;&#x6D3B;&#x524D;&#x73A9;&#x4E0A;&#x51E0;&#x4E0B;&#x3002;&#x6211;&#x4EEC;&#x6709;&#x673A;&#x4F1A;&#x8BD5;&#x8BD5;&#x8BA9;&#x96C6;&#x7FA4;&#x8D85;&#x8D1F;&#x8377;&#xFF0C;&#x6D4B;&#x8BD5;&#x786C;&#x4EF6;&#x7684;&#x6781;&#x9650;&#x8303;&#x56F4;&#xFF0C;&#x641E;&#x6302;&#x6389;&#x4E00;&#x4E9B;&#x786C;&#x76D8;&#xFF0C;&#x6D4B;&#x8BD5;&#x4E00;&#x4E9B;&#x975E;&#x5E38;&#x6602;&#x8D35;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5B66;&#x5230;&#x5F88;&#x591A;&#x5173;&#x4E8E;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;&#x7684;&#x4E1C; &#x897F;&#xFF0C;&#x540C;&#x65F6;&#x83B7;&#x5F97;&#x6392;&#x5E8F;&#x57FA;&#x51C6;&#x7ADE;&#x8D5B;&#x7684;&#x80DC;&#xFF08;&#x975E;&#x5B98;&#x65B9;&#xFF09;&#x3002;</p>
+<p><img src="../images/googlesort.jpg" alt="googlesort"></p>
+<p>2007&#x5E74;</p>
+<p>&#xFF08;1PB&#xFF0C;12.13 &#x5C0F;&#x65F6;&#xFF0C;1.37 TB/&#x5206;&#x949F;&#xFF0C;2.9 MB/&#x79D2;/worker&#xFF09;</p>
+<p>&#x6211;&#x4EEC;&#x5728; 2007 &#x5E74;&#x8FDB;&#x884C;&#x4E86;&#x9996;&#x6B21; Petasort &#x6D4B;&#x8BD5;&#x3002;&#x90A3;&#x65F6;&#x6211;&#x4EEC;&#x5F88;&#x5F00;&#x5FC3;&#x80FD;&#x591F;&#x5B8C;&#x6210;&#x6574;&#x4E2A;&#x6D4B;&#x8BD5;&#xFF0C;&#x5C3D;&#x7BA1;&#x5BF9;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x7684;&#x6B63;&#x786E;&#x6027;&#x6709;&#x4E9B;&#x8D28;&#x7591;&#xFF08;&#x6211;&#x4EEC;&#x5E76;&#x6CA1;&#x6709;&#x9A8C;&#x8BC1;&#x6B63;&#x786E;&#x6027;&#xFF09;&#x3002;&#x8981;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x5173;&#x95ED;&#x4E86;&#x9A8C;&#x8BC1; map &#x5206;&#x7247;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E0E;&#x5907;&#x4EFD;&#x662F;&#x5426;&#x4E00;&#x81F4;&#x7684;&#x673A;&#x5236;&#xFF0C;&#x5C31;&#x65E0;&#x6CD5;&#x5B8C;&#x6210;&#x8FD9;&#x9879;&#x5DE5;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x6000;&#x7591;&#x8FD9;&#x662F;&#x7528;&#x6765;&#x5BF9;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6570;&#x636E;&#x6392;&#x5E8F;&#x7684;&#x8C37;&#x6B4C;&#x6863;&#x6848;&#x7CFB;&#x7EDF;&#xFF08;GFS&#xFF09;&#x6240;&#x9020;&#x6210;&#x7684;&#x9650;&#x5236;&#x3002;GFS&#x6CA1; &#x6709;&#x8DB3;&#x591F;&#x7684;&#x6821;&#x9A8C;&#x548C;&#x4FDD;&#x62A4;&#x673A;&#x5236;&#xFF0C;&#x6709;&#x65F6;&#x4F1A;&#x8FD4;&#x56DE;&#x574F;&#x503C;&#x3002;&#x7CDF;&#x7CD5;&#x7684;&#x662F;&#xFF0C;&#x8BE5;&#x57FA;&#x51C6;&#x6240;&#x91C7;&#x7528;&#x7684;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x5E76;&#x6CA1;&#x6709;&#x81EA;&#x5E26;&#x7684;&#x6821;&#x9A8C;&#x548C;&#xFF0C;&#x6765;&#x8BA9; MapReduce &#x53D1;&#x9001;&#x901A;&#x77E5;&#xFF08;&#x5728;&#x8C37;&#x6B4C;&#xFF0C;MapReduce &#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x91C7;&#x7528;&#x5185;&#x5D4C;&#x6821;&#x9A8C;&#x548C;&#x7684;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#xFF09;&#x3002;</p>
+<p>2008&#x5E74;</p>
+<p>&#xFF08;1PB&#xFF0C;6.03 &#x5C0F;&#x65F6;&#xFF0C;2.76 TB/&#x5206;&#x949F;&#xFF0C;11.5 MB/&#x79D2;/worker&#xFF09;</p>
+<p>2008 &#x5E74;&#x5F00;&#x59CB;&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x7740;&#x773C;&#x4E8E;&#x4F18;&#x5316;&#x8C03;&#x6574;&#x3002;&#x6211;&#x4EEC;&#x82B1;&#x4E86;&#x51E0;&#x5929;&#x65F6;&#x95F4;&#x6765;&#x8C03;&#x6574;&#x5206;&#x7247;&#x6570;&#x91CF;&#x3001;&#x5404;&#x4E2A;&#x7F13;&#x5B58;&#x533A;&#x7684;&#x5927;&#x5C0F;&#x3001;&#x9884;&#x8BFB;/&#x9884;&#x5199;&#x673A;&#x5236;&#x3001;&#x9875;&#x7F13;&#x5B58;&#x673A;&#x5236;&#x7B49;&#x7B49;&#x3002;&#x901A;&#x8FC7;&#x5411; GFS &#x4E09;&#x8DEF;&#x590D;&#x5236;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x6211;&#x4EEC;&#x89E3;&#x51B3;&#x4E86;&#x74F6;&#x9888;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x6211;&#x4EEC;&#x90A3;&#x65F6;&#x5728;&#x8C37;&#x6B4C;&#x7684;&#x6807;&#x51C6;&#x7528;&#x6CD5;&#x3002;&#x5C11;&#x4EFB;&#x4F55;&#x4E00;&#x8DEF;&#x90FD;&#x4F1A;&#x5E26;&#x6765;&#x5F88;&#x9AD8;&#x7684;&#x98CE;&#x9669;&#x3002;</p>
+<p>2010&#x5E74;</p>
+<p>&#xFF08;1PB&#xFF0C;2.95 &#x5C0F;&#x65F6;&#xFF0C;5.65 TB/&#x5206;&#x949F;&#xFF0C;11.8 MB/&#x79D2;/worker&#xFF09;</p>
+<p>&#x5728;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x65B0;&#x7248;&#x672C;&#x7684;GraySort&#x57FA;&#x51C6;&#xFF0C;&#x5B83;&#x91C7;&#x7528;&#x4E0D;&#x53EF;&#x538B;&#x7F29;&#x7684;&#x6570;&#x636E;&#x3002;&#x5728;&#x65E9;&#x4E9B;&#x5E74;&#xFF0C;&#x6211;&#x4EEC;&#x4ECE; GFS &#x8BFB;&#x53D6;&#x6216;&#x5199;&#x5165; 1 PB&#x7684;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5B9E;&#x9645;&#x4F20;&#x8F93;&#x7684;&#x6570;&#x636E;&#x53EA;&#x6709; 300 TB&#xFF0C;&#x56E0;&#x4E3A;&#x90A3;&#x65F6;&#x6240;&#x4F7F;&#x7528;&#x7684;ASCII&#x683C;&#x5F0F;&#x6613;&#x4E8E;&#x538B;&#x7F29;&#x3002;</p>
+<p>&#x8FD9;&#x4E5F;&#x662F; Colossus &#x8BDE;&#x751F;&#x7684;&#x4E00;&#x5E74;&#xFF08;&#x8C37;&#x6B4C;&#x4E0B;&#x4E00;&#x4EE3;&#x5206;&#x5E03;&#x5F0F;&#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#xFF0C;GFS &#x7684;&#x7EE7;&#x4EFB;&#x8005;&#xFF09;&#x3002;&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x518D;&#x9047;&#x5230;&#x5148;&#x524D;&#x4F7F;&#x7528; GFS &#x65F6;&#x78B0;&#x5230;&#x7684;&#x5D29;&#x6E83;&#x95EE;&#x9898;&#x3002;&#x6211;&#x4EEC;&#x8FD8;&#x5BF9;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x8FDB;&#x884C;RS&#x7F16;&#x7801;&#xFF08;Colossus&#x7684;&#x65B0;&#x529F;&#x80FD;&#xFF09;&#xFF0C;&#x4ECE;&#x800C;&#x5C06;&#x603B;&#x5199;&#x5165;&#x636E;&#x91CF;&#x4ECE; 3 PB&#xFF08;&#x4E09;&#x8DEF;&#x590D;&#x5236;&#xFF09;&#x51CF;&#x5C11;&#x5230;&#x5927;&#x7EA6;1.6PB&#x3002;&#x6211;&#x4EEC;&#x4E5F;&#x9996;&#x6B21;&#x9A8C;&#x8BC1;&#x4E86;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x7684;&#x6B63;&#x786E;&#x6027;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x51CF;&#x5C11;&#x6389;&#x961F;&#x6570;&#x636E;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x52A8;&#x6001;&#x5206;&#x7247;&#x6280;&#x672F;&#xFF08;&#x4E5F;&#x88AB;&#x79F0;&#x4F5C; reduce subsharding&#xFF09;&#x3002;&#x8FD9;&#x4E5F;&#x662F;&#x540E;&#x6765;&#x5728; Dataflow &#x6240;&#x91C7;&#x7528;&#x7684;&#x5168;&#x52A8;&#x6001;&#x5207;&#x7247;&#x6280;&#x672F;&#x7684;&#x5148;&#x9A71;&#x3002;</p>
+<p>2011&#x5E74;</p>
+<p>&#xFF08;1PB&#xFF0C;0.55 &#x5C0F;&#x65F6;&#xFF0C;30.3 TB/&#x5206;&#x949F;&#xFF0C;63.1 MB/&#x79D2;/worker&#xFF09;</p>
+<p>&#x8FD9; &#x4E00;&#x5E74;&#x6211;&#x4EEC;&#x7684;&#x7F51;&#x7EDC;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#xFF0C;&#x4E5F;&#x5F00;&#x59CB;&#x66F4;&#x591A;&#x5730;&#x5173;&#x6CE8;&#x6BCF;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6548;&#x7387;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#xFF08;I/O&#xFF09;&#x65B9;&#x9762;&#x7684;&#x95EE;&#x9898;&#x3002;&#x6211;&#x4EEC;&#x786E;&#x4FDD;&#x4E86;&#x6240;&#x6709;&#x7684;&#x78C1;&#x76D8;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x5728; 2 MB &#x7684;&#x533A;&#x5757;&#x4E2D;&#x8FDB;&#x884C;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x843D;&#x5230; 64 KB &#x7684;&#x5C0F;&#x533A;&#x5757;&#x4E2D;&#x3002;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x56FA;&#x6001;&#x786C;&#x76D8;&#x6765;&#x5B58;&#x50A8;&#x90E8;&#x5206;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4F7F;&#x5F97; Petasort &#x6D4B;&#x8BD5;&#x9996;&#x6B21;&#x5728;&#x4E00;&#x5C0F;&#x65F6;&#x65F6;&#x95F4;&#x5185;&#x5B8C;&#x6210;&#x2013;&#x2013;&#x786E;&#x5207;&#x8BB2;&#x662F; 33 &#x5206;&#x949F;&#x2013;&#x2013;&#x6211;&#x4EEC;&#x5728;&#x6B64;&#x505A;&#x4E86;&#x4ECB;&#x7ECD;&#x3002;&#x6700;&#x7EC8;&#xFF0C;&#x5728;&#x5206;&#x5E03;&#x5F0F;&#x5B58;&#x50A8;&#x4E2D;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#x4EE5;&#x53CA;&#x575A;&#x6301;&#x5C06;&#x4E2D;&#x95F4;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5728;&#x786C;&#x76D8;&#x4E2D;&#x4EE5;&#x652F;&#x6301;&#x5BB9;&#x9519;&#xFF08;&#x7531;&#x4E8E;&#x5728;&#x8FD9;&#x79CD;&#x89C4;&#x6A21;&#x7684;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;&#x67D0;&#x4E9B;&#x786C;&#x76D8;&#x751A;&#x81F3;&#x6574;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x90FD;&#x5F88;&#x5BB9;&#x6613;&#x5B95;&#x6389;&#xFF0C;&#x56E0;&#x6B64;&#x5BB9;&#x9519;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF09;&#x7684;&#x95EE;&#x9898;&#x4E0A;&#xFF0C;&#x6027;&#x80FD;&#x51E0;&#x4E4E;&#x8FBE;&#x5230;&#x4E86;&#x5728;&#x6307;&#x5B9A; MapReduce &#x67B6;&#x6784;&#x6761;&#x4EF6;&#x4E0B;&#x7684;&#x786C;&#x4EF6;&#x6781;&#x9650;&#x6027;&#x80FD;&#x7684;&#x4E24;&#x500D;&#x3002;</p>
+<p>&#x540C;&#x65F6;&#x4E5F;&#x83B7;&#x5F97;&#x4E86;&#x66F4;&#x9AD8;&#x7684;&#x6269;&#x5C55;&#xFF1A;&#x6211;&#x4EEC;&#x5728; 6 &#x5C0F;&#x65F6; 27 &#x5206;&#x949F;&#x4E4B;&#x5185;&#x8FD0;&#x884C;&#x4E86; 10 PB &#x7684;&#x6570;&#x636E;&#xFF08;26 TB/&#x5206;&#x949F;&#xFF09;&#x3002;</p>
+<p>2012&#x5E74;</p>
+<p>&#xFF08;50PB&#xFF0C;23&#x5C0F;&#x65F6;&#xFF0C;36.2TB/&#x5206;&#x949F;&#xFF0C;50 MB/&#x79D2;/worker&#xFF09;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x6CE8;&#x610F;&#x529B;&#x8F6C;&#x79FB;&#x5230;&#x66F4;&#x5927;&#x89C4;&#x6A21;&#x7684;&#x6D4B;&#x8BD5;&#x4E2D;&#x3002;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x6211;&#x4EEC;&#x5728;&#x8C37;&#x6B4C;&#x6240;&#x80FD;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x6700;&#x5927;&#x89C4;&#x6A21;&#x96C6;&#x7FA4;&#xFF0C;&#x6211;&#x4EEC;&#x8FDB;&#x884C;&#x4E86;&#x6700;&#x5927;&#x89C4;&#x6A21;&#x7684; MapReduce &#x6D4B;&#x8BD5;&#xFF08;&#x5C31;&#x5206;&#x7247;&#x6570;&#x636E;&#x91CF;&#x800C;&#x8A00;&#xFF09;&#x3002;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x8BE5;&#x96C6;&#x7FA4;&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x786C;&#x76D8;&#x7A7A;&#x95F4;&#x6765;&#x5BF9; 1000 PB &#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x56E0;&#x800C;&#x6211;&#x4EEC;&#x5C06;&#x6392;&#x5E8F;&#x7684;&#x6570;&#x636E;&#x91CF;&#x9650;&#x5B9A;&#x5728; 50 PB&#x3002;&#x6211;&#x4EEC;&#x53EA;&#x6D4B;&#x8BD5;&#x4E86;&#x4E00;&#x6B21;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x505A;&#x4E13;&#x95E8;&#x7684;&#x4F18;&#x5316;&#xFF0C;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x8FD8;&#x6CBF;&#x7528;&#x4E86;&#x4E4B;&#x524D; 10 PB &#x6D4B;&#x8BD5;&#x7684;&#x90A3;&#x5957;&#x3002;&#x5B8C;&#x6210;&#x65F6;&#x95F4;&#x4E3A; 23 &#x5C0F;&#x65F6; 5 &#x5206;&#x949F;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E2A;&#x6392;&#x5E8F;&#x7684;&#x89C4;&#x6A21;&#x662F;GraySort&#x5927;&#x89C4;&#x6A21;&#x6807;&#x51C6; &#x7684;500&#x500D;&#xFF0C;&#x5728;&#x541E;&#x5410;&#x91CF;&#x4E0A;&#x662F;2015&#x5E74;GraySort&#x5B98;&#x65B9;&#x4F18;&#x80DC;&#x8005;&#x7684;&#x4E24;&#x500D;&#x3002;</p>
+<p>&#x6765;&#x81EA;&#xFF1A;<a href="http://blog.jobbole.com/102118/" target="_blank">http://blog.jobbole.com/102118/</a></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter4/section3.html" class="navigation navigation-prev " aria-label="Previous page: 双向链表"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter5/section1.html" class="navigation navigation-next " aria-label="Next page: 冒泡排序"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
