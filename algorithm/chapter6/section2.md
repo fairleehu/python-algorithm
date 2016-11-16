@@ -12,10 +12,12 @@ def front(self, root):
         """递归实现先序遍历"""
         if root == None:
             return
-        print root.elem,
+        print root.elem
         self.front(root.lchild)
         self.front(root.rchild)
 ```
+
+
 * 中序遍历 
 在中序遍历中，我们递归使用中序遍历访问左子树，然后访问根节点，最后再递归使用中序遍历访问右子树  
 左子树->根节点->右子树
@@ -25,9 +27,12 @@ def front(self, root):
         if root == None:
             return
         self.middle(root.lchild)
-        print root.elem,
+        print root.elem
         self.middle(root.rchild)
 ```
+
+
+
 * 后序遍历 
 在后序遍历中，我们先递归使用后序遍历访问左子树和右子树，最后访问根节点  
 左子树->右子树->根节点
@@ -40,12 +45,12 @@ def later(self, root):
         self.later(root.rchild)
         print root.elem
 ```
-![三种遍历结果](/images/三种遍历结果.png)
+![三种遍历结果](/images/三种遍历结果.jpg)
 
 > 课堂练习：
-按照如图树的结构写出三种遍历的顺序： 
-![树练习](/images/树练习.png)
-结果：
+按照如图树的结构写出三种遍历的顺序:    
+![树练习](/images/树练习.png)  
+结果：  
 先序:a b c  d e f g h  
 中序:b d c e a  f h g  
 后序:d e c b h g f a  
@@ -53,7 +58,7 @@ def later(self, root):
 
 
 ##广度优先遍历(层次遍历)
-
+从树的root开始，从上到下从从左到右遍历整个树的节点
 ```python
 def level_queue(self, root):
         """利用队列实现树的层次遍历"""
@@ -71,4 +76,4 @@ def level_queue(self, root):
                 myQueue.append(node.rchild)
 ```
 
-> 课后练习：自己实现求出树的深度？
+###课后练习：自己实现求出树的深度？

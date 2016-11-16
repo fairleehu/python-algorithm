@@ -27,5 +27,4 @@
 * [树与树算法](chapter6/README.md)
     * [二叉树](chapter6/section1.md)
     * [二叉树的遍历](chapter6/section2.md)
-    * [树的应用场景](chapter6/section3.md)
 
